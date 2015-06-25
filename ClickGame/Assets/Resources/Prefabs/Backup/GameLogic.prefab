@@ -1,0 +1,154 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &184464
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 417320}
+  - 114: {fileID: 11442602}
+  - 114: {fileID: 11482540}
+  - 114: {fileID: 11411668}
+  - 114: {fileID: 11496330}
+  - 114: {fileID: 11417404}
+  m_Layer: 0
+  m_Name: GameLogic
+  m_TagString: GameLogic
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &417320
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184464}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11411668
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85754d5d091bb1340972ce4fb1d88deb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toastPrefab: {fileID: 136002, guid: 22b1bc5c417041e478a5006d02bd4133, type: 2}
+  floatingTextPrefab: {fileID: 164482, guid: 86e84df82ce695d4687100afbaad6c9c, type: 2}
+--- !u!114 &11417404
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 338c50fe712055c40bd7cf79844a8ca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  globalMarket: {fileID: 11482540}
+  globalWeedGame: {fileID: 11442602}
+  globalTruckDepot: {fileID: 0}
+  globalFarmHouse: {fileID: 0}
+  globalUpgradeFactory: {fileID: 0}
+  globalGlobalMarket: {fileID: 0}
+  smallFarmPrefab: {fileID: 101806, guid: 6a203d2185aeea3469010cc681ebf6b9, type: 2}
+  truckPrefab: {fileID: 108046, guid: 03c61dc6e822b65428a97864a737848c, type: 2}
+--- !u!114 &11442602
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dc286f5bc53d5f409e07469e4b2d3df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  generalTasks: {fileID: 11411668}
+  globalPrefabs: {fileID: 11417404}
+  mainGameObjects: {fileID: 0}
+  mainGameUI: {fileID: 0}
+  upgradeUI: {fileID: 0}
+  farmHouseUI: {fileID: 0}
+  smallFarmHouseUI: {fileID: 0}
+  truckDepotUI: {fileID: 0}
+--- !u!114 &11482540
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c871ed3a0f3e4d8439ad6e6d0cbed352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainGame: {fileID: 11442602}
+  generalTasks: {fileID: 11411668}
+  residuleIncomeText: {fileID: 0}
+  weedScoreText: {fileID: 0}
+  goldScoreText: {fileID: 0}
+  globalMarketExchangeRate: 0
+  weedPerClickDefault: 1
+  weedPerClickUpgradeCostDefault: 50
+  weedPerClickGrowth: 2
+  weedPerClickUpgradeCost: 50
+  weedPerClickUpgradeCostMultiplier: 2.5
+  globalMarketBuildingCost: 100000
+  smallFarmHouseCostDefault: 100
+  smallFarmHouseCost: 0
+  smallFarmHouseCostMultiplier: 2.0999999
+  smallFarmUpgradeCostDefault: 200
+  smallFarmUpgradeCostMultiplier: 2
+  truckPurchaseCostPerTruck:
+  - 100
+  - 500
+  - 1000
+  - 2000
+  - 4000
+  - 6000
+  - 8000
+  - 10000
+  - 12000
+  - 14000
+  truckCarryingCapacityUpgradeCostDefault: 1000
+  truckCarryingCapacityUpgradeCost: 0
+  truckCarryingCapacityUpgradeCostMultiplier: 2.5
+--- !u!114 &11496330
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74d8f1929e084e14d8f764410b369c47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraMoveSpeed: 75
+  cameraMoveSpeedMobile: 1
+  cameraAccelerationSpeedConstant: 350
+  timeUntilCameraCanMove: .150000006
+  speedResetTime: .25
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 184464}
+  m_IsPrefabParent: 1
